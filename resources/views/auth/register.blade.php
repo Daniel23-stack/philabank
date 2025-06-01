@@ -1652,62 +1652,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 d-none d-lg-block">
-                            <div class="auth-visual-section" data-aos="fade-left" data-aos-delay="400">
-                                <div class="visual-content">
-                                    <div class="welcome-text">
-                                        <h3>{{ _lang('Join') }}</h3>
-                                        <h1>{{ get_option('site_title', config('app.name')) }}</h1>
-                                        <p>{{ _lang('Start your digital banking journey with us today') }}</p>
-                                    </div>
-
-                                    <div class="features-list">
-                                        <div class="feature-item">
-                                            <div class="feature-icon">
-                                                <i class="icofont-rocket-alt"></i>
-                                            </div>
-                                            <div class="feature-text">
-                                                <h4>{{ _lang('Quick Setup') }}</h4>
-                                                <p>{{ _lang('Get started in minutes with our simple registration process') }}</p>
-                                            </div>
-                                        </div>
-                                        <div class="feature-item">
-                                            <div class="feature-icon">
-                                                <i class="icofont-money-bag"></i>
-                                            </div>
-                                            <div class="feature-text">
-                                                <h4>{{ _lang('Zero Fees') }}</h4>
-                                                <p>{{ _lang('No hidden charges, transparent pricing for all services') }}</p>
-                                            </div>
-                                        </div>
-                                        <div class="feature-item">
-                                            <div class="feature-icon">
-                                                <i class="icofont-gift"></i>
-                                            </div>
-                                            <div class="feature-text">
-                                                <h4>{{ _lang('Welcome Bonus') }}</h4>
-                                                <p>{{ _lang('Get exclusive rewards when you join our community') }}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="floating-elements">
-                                    <div class="floating-card card-1">
-                                        <i class="icofont-users-alt-4"></i>
-                                        <span>{{ _lang('Community') }}</span>
-                                    </div>
-                                    <div class="floating-card card-2">
-                                        <i class="icofont-diamond"></i>
-                                        <span>{{ _lang('Premium') }}</span>
-                                    </div>
-                                    <div class="floating-card card-3">
-                                        <i class="icofont-trophy"></i>
-                                        <span>{{ _lang('Rewards') }}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

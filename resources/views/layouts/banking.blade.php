@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #0d6efd;
+            --primary-color: #000117;
+            --accent-color: #65d393;
             --sidebar-bg: #f8f9fa;
             --border-color: #dee2e6;
             --text-muted: #6c757d;
-            --success-color: #198754;
+            --success-color: #65d393;
             --danger-color: #dc3545;
             --warning-color: #ffc107;
             --info-color: #0dcaf0;
@@ -25,7 +26,7 @@
 
         .sidebar {
             min-height: 100vh;
-            background: var(--sidebar-bg);
+            background: var(--primary-color);
             border-right: 1px solid var(--border-color);
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
             position: fixed;
@@ -45,8 +46,8 @@
         .user-profile {
             text-align: center;
             padding: 2rem 1rem;
-            border-bottom: 1px solid var(--border-color);
-            background: white;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             margin-bottom: 1rem;
         }
 
@@ -62,13 +63,13 @@
         .user-name {
             font-size: 1.1rem;
             font-weight: 600;
-            color: #333;
+            color: white;
             margin: 0;
         }
 
         .user-role {
             font-size: 0.9rem;
-            color: var(--text-muted);
+            color: var(--accent-color);
             margin: 0;
         }
 
@@ -87,27 +88,19 @@
         }
 
         .nav-link {
-            color: #495057;
-            padding: 0.75rem 1rem;
-            margin: 0.2rem 0;
-            border-radius: 8px;
+            color: rgba(255, 255, 255, 0.8) !important;
+            padding: 0.8rem 1.5rem;
             transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            font-weight: 500;
         }
 
         .nav-link:hover {
-            background-color: rgba(13, 110, 253, 0.1);
-            color: var(--primary-color);
-            transform: translateX(5px);
+            color: var(--accent-color) !important;
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .nav-link.active {
-            background-color: var(--primary-color);
-            color: white !important;
-            box-shadow: 0 2px 8px rgba(13, 110, 253, 0.3);
+            color: var(--accent-color) !important;
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .nav-link i {
@@ -151,22 +144,21 @@
         }
 
         .btn-logout {
-            width: 100%;
-            background: var(--danger-color);
-            color: white;
+            background: var(--accent-color);
+            color: var(--primary-color);
             border: none;
             padding: 0.75rem;
             border-radius: 8px;
             font-weight: 500;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 4px rgba(220, 53, 69, 0.3);
+            box-shadow: 0 2px 4px rgba(101, 211, 147, 0.3);
         }
 
         .btn-logout:hover {
-            background: #c82333;
+            background: #4fb87a;
             transform: translateY(-1px);
-            box-shadow: 0 4px 8px rgba(220, 53, 69, 0.4);
-            color: white;
+            box-shadow: 0 4px 8px rgba(101, 211, 147, 0.4);
+            color: var(--primary-color);
         }
 
         .dropdown-item.text-danger:hover {
@@ -224,6 +216,23 @@
         .sidebar::-webkit-scrollbar-thumb:hover {
             background: #a8a8a8;
         }
+
+        .brand-section {
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 1rem;
+        }
+
+        .brand-section h4 {
+            color: var(--accent-color);
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .brand-section small {
+            color: rgba(255, 255, 255, 0.6);
+        }
     </style>
 </head>
 <body>
@@ -237,9 +246,9 @@
             <!-- Sidebar -->
             <div class="sidebar" id="sidebar">
                 <!-- Brand Section -->
-                <div class="brand-section" style="padding: 1.5rem; text-align: center; border-bottom: 1px solid var(--border-color); margin-bottom: 1rem;">
-                    <h4 style="color: var(--primary-color); font-weight: 700; margin: 0;">PhilaLink</h4>
-                    <small style="color: var(--text-muted);">Microloan & Finance</small>
+                <div class="brand-section">
+                    <h4>PhilaLink</h4>
+                    <small>Microloan & Finance</small>
                 </div>
 
                 <!-- User Profile Section -->

@@ -23,6 +23,11 @@ Route::middleware(['install'])->group(function () use ($email_verification, $all
         'register' => $allow_signup == 'yes' ? true : false,
     ]);
 
+    // Loan Calculator Route - Public Access
+    Route::get('/loan-calculator', function () {
+        return view('theme.calculator');
+    })->name('loan.calculator');
+
     Route::get('/logout', 'Auth\LoginController@logout');
 
     Route::get('verify/resend', 'Auth\TwoFactorController@resend')->name('verify.resend');
